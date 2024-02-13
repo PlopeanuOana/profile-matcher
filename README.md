@@ -12,9 +12,13 @@ Start the application
 -
 1. Clone the project from repository - git clone https://github.com/PlopeanuOana/profile-matcher.git
 2. Perform `mvn clean install` 
-3. Navigate to the directory containing the `docker-compose.yml` file - src/main/java/com/gameloft/profile/compose 
+3. Navigate to the directory containing the `docker-compose.yml` file - _src/main/java/com/gameloft/profile/compose_ 
 4. Run the following command to start the PostgreSQL database container:
     ```
     docker-compose up -d
     ```
-5.  Run the Spring Boot application using your preferred method. Typically, you can use Maven or an IDE to run the `ProfileApplication` class.
+5. Run the Spring Boot application using your preferred method. Typically, you can use Maven or an IDE to run the `ProfileApplication` class.
+6. The application is running on locahost:8080
+7. Import the postman collection `Profile.postman_collection.json`
+8. **Create** a new player profile with a **uniq** _player_id_
+9. **Get** the profile updated by providing the _player_id_
